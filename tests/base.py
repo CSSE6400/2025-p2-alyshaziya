@@ -5,8 +5,8 @@ import unittest
 class TodoTest(unittest.TestCase):
     def setUp(self):
         self.app = create_app(config_overrides={
-        'SQLALCHEMY_DATABASE_URI': 'sqlite:///:memory:',
-        'TESTING': True
+            'SQLALCHEMY_DATABASE_URI': 'sqlite:///:memory:',
+            'TESTING': True
         })
         self.client = self.app.test_client()
 
